@@ -1,9 +1,9 @@
 import type { NextPage } from "next";
 import Head from "next/head";
-import Image from "next/image";
-import { Header, Form, Footer } from "../../components/register";
+import Sidebar from "../../components/dashboard/Sidebar";
+import Header from "../../components/dashboard/Header";
 
-const Register: NextPage = () => {
+const Dashboard: NextPage = () => {
   return (
     <div>
       <Head>
@@ -12,13 +12,12 @@ const Register: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="min-h-screen bg-gray-50 flex flex-col justify-center py-12 sm:px-6 lg:px-8">
+      <main className="h-screen flex overflow-hidden bg-gray-100">
+        <Sidebar />
         <Header />
-        <Form />
-        <Footer />
       </main>
     </div>
   );
 };
 
-export default Register;
+export default Dashboard;
