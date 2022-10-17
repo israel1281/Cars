@@ -1,6 +1,6 @@
 import type { NextPage } from "next";
 import Head from "next/head";
-import { Header, Form } from "../components/signin";
+import { Header, Form, Footer } from "../components/signin";
 import Image from "next/image";
 
 const Home: NextPage = () => {
@@ -15,6 +15,7 @@ const Home: NextPage = () => {
       <main className="min-h-screen bg-gray-50 flex flex-col justify-center py-12 sm:px-6 lg:px-8">
         <Header />
         <Form />
+        <Footer />
       </main>
     </div>
   );
